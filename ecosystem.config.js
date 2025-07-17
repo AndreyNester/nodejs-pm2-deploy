@@ -19,7 +19,7 @@ module.exports = {
   apps: [
     {
       name: "api-service",
-      script: "./frontend/dist/app.js",
+      script: "./backend/dist/app.js",
       env_production: {
         NODE_ENV: "production",
       },
