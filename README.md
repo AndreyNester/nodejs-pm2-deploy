@@ -1,3 +1,5 @@
 # Деплой приложения на сервер с использованием pm2
-
-Стартеркит проекта по автоматизации деплоя фронтенда и бэкенда при помощи pm2 (pm2 deploy)
+IP адрес 89.169.189.238
+Frontend https://nesterok.frontend.nomorepartiessbs.ru
+Backend https://api.nesterok.frontend.nomorepartiessbs.ru
+deploy command (from root directory): ```pm2 deploy production```
