@@ -15,6 +15,19 @@ mongoose.connect(DB_ADDRESS);
 
 // Только для локальных тестов. Не используйте это в продакшене
 // app.use(cors())
+// Prod
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://nesterok.frontend.nomorepartiessbs.ru",
+  "https://nesterok.frontend.nomorepartiessbs.ru",
+];
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
