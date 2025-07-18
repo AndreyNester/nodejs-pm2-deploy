@@ -6,6 +6,7 @@ const {
   DEPLOY_HOST,
   DEPLOY_REF,
   NPM_PATH,
+  DEPLOY_PATH,
 
   // backend
   DEPLOY_REPO,
