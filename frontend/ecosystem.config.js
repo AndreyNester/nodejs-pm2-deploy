@@ -17,7 +17,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH_FRONTEND,
-      
+      "pre-setup": `mkdir -p ${DEPLOY_PATH_FRONTEND}`,
       "post-deploy": `export ${NPM_PATH} && npm install && npm run build`,
     },
   },
