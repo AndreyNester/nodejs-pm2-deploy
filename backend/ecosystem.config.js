@@ -13,7 +13,7 @@ module.exports = {
   apps: [
     {
       name: "api-service",
-      script: `${DEPLOY_PATH_BACKEND}/dist/app.js`,
+      script: `/home/andrey_nesterok/nodejs-mesto-project/backend/dist/app.js`,
       env_production: {
         NODE_ENV: "production",
       },
